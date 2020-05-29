@@ -151,6 +151,7 @@ lazy val docs = project
   .enablePlugins(MicrositesPlugin)
   .dependsOn(
     datadogMetrics,
+    natchezDoobie,
     natchezDatadog,
     natchezCombine,
     natchezSlf4j,
@@ -163,7 +164,8 @@ lazy val docs = project
     mdocVariables := Map("VERSION" -> version.value),
     micrositePushSiteWith := GitHub4s,
     libraryDependencies ++= Seq(
-      "org.http4s" %% "http4s-blaze-client" % http4sVersion
+      "org.http4s" %% "http4s-blaze-client" % http4sVersion,
+      "org.tpolecat" %% "doobie-postgres" % doobieVersion
     )
   )
 
