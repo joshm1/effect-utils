@@ -1,3 +1,5 @@
+> **Archived 2026-10-04.** No longer maintained.
+
 # effect-utils
 
 [ ![Download](https://api.bintray.com/packages/ovotech/maven/natchez-datadog/images/download.svg) ](https://bintray.com/ovotech/maven/logging/_latestVersion)
